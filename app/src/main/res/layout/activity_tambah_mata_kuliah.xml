@@ -1,0 +1,72 @@
+<!-- activity_tambah_mata_kuliah.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/imgbg"
+    tools:context=".TambahMataKuliahActivity">
+
+    <EditText
+        android:id="@+id/editTextKodeMK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kode Mata Kuliah"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="#35ffffff"
+        android:fontFamily="@font/montserratlight"
+        android:padding="8dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextNamaMK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextKodeMK"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:fontFamily="@font/montserratlight"
+        android:background="#35ffffff"
+        android:padding="8dp"
+        android:hint="Nama Mata Kuliah"/>
+
+    <EditText
+        android:id="@+id/editTextSKS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNamaMK"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="#35ffffff"
+        android:padding="8dp"
+        android:fontFamily="@font/montserratlight"
+        android:inputType="number"
+        android:hint="SKS"/>
+
+    <EditText
+        android:id="@+id/editTextDeskripsiMK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextSKS"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="#35ffffff"
+        android:fontFamily="@font/montserratlight"
+        android:padding="8dp"
+        android:hint="Deskripsi Mata Kuliah"/>
+
+    <Button
+        android:id="@+id/buttonTambahMK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDeskripsiMK"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montserratmedium"
+        android:backgroundTint="#45ffffff"
+        android:text="Tambah Mata Kuliah"/>
+</RelativeLayout>

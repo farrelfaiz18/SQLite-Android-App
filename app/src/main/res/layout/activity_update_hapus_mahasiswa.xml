@@ -1,0 +1,71 @@
+<!-- activity_update_hapus_mahasiswa.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imgbg"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextNamaUpdateMahasiswa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Mahasiswa"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="#35ffffff"
+        android:padding="8dp"
+        android:fontFamily="@font/montserratlight"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextProgramStudiUpdateMahasiswa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Program Studi"
+        android:layout_below="@id/editTextNamaUpdateMahasiswa"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:fontFamily="@font/montserratlight"
+        android:background="#35ffffff"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextAngkatanUpdateMahasiswa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Angkatan"
+        android:inputType="number"
+        android:layout_below="@id/editTextProgramStudiUpdateMahasiswa"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="#35ffffff"
+        android:fontFamily="@font/montserratlight"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/buttonUpdateMahasiswa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:textColor="@color/black"
+        android:backgroundTint="#45ffffff"
+        android:fontFamily="@font/montserratmedium"
+        android:layout_below="@id/editTextAngkatanUpdateMahasiswa"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonHapusMahasiswa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hapus"
+        android:textColor="@color/black"
+        android:backgroundTint="#45ffffff"
+        android:fontFamily="@font/montserratmedium"
+        android:layout_below="@id/buttonUpdateMahasiswa"
+        android:layout_marginTop="8dp"/>
+
+</RelativeLayout>

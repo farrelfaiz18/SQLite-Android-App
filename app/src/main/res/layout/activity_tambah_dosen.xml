@@ -1,0 +1,61 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/imgbg"
+    tools:context=".TambahDosenActivity">
+
+    <!-- NIP -->
+    <EditText
+        android:id="@+id/editTextNIP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="#35ffffff"
+        android:hint="NIP"
+        android:fontFamily="@font/montserratlight"
+        android:padding="8dp"/> <!-- Add padding here -->
+
+    <!-- Nama Dosen -->
+    <EditText
+        android:id="@+id/editTextNamaDosen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNIP"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="#35ffffff"
+        android:hint="Nama Dosen"
+        android:fontFamily="@font/montserratlight"
+        android:padding="8dp"/> <!-- Add padding here -->
+
+    <!-- Program Studi Dosen -->
+    <EditText
+        android:id="@+id/editTextProgramStudiDosen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNamaDosen"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="#35ffffff"
+        android:hint="Program Studi Dosen"
+        android:fontFamily="@font/montserratlight"
+        android:padding="8dp"/> <!-- Add padding here -->
+
+    <!-- Tombol Tambah Dosen -->
+    <Button
+        android:id="@+id/buttonTambahDosen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextProgramStudiDosen"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#45ffffff"
+        android:fontFamily="@font/montserratmedium"
+        android:text="Tambah Dosen"/>
+</RelativeLayout>

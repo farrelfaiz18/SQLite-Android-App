@@ -1,0 +1,71 @@
+<!-- activity_tambah_mahasiswa.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imgbg"
+    android:padding="16dp"
+    tools:context=".TambahMahasiswaActivity">
+
+    <EditText
+        android:id="@+id/editTextNIM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="#35ffffff"
+        android:padding="8dp"
+        android:fontFamily="@font/montserratlight"
+        android:hint="NIM"/>
+
+    <EditText
+        android:id="@+id/editTextNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNIM"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="#35ffffff"
+        android:fontFamily="@font/montserratlight"
+        android:padding="8dp"
+        android:hint="Nama Mahasiswa"/>
+
+    <EditText
+        android:id="@+id/editTextProgramStudi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNama"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="#35ffffff"
+        android:fontFamily="@font/montserratlight"
+        android:padding="8dp"
+        android:hint="Program Studi"/>
+
+    <EditText
+        android:id="@+id/editTextAngkatan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextProgramStudi"
+        android:layout_marginTop="8dp"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:fontFamily="@font/montserratlight"
+        android:background="#35ffffff"
+        android:padding="8dp"
+        android:hint="Angkatan"/>
+
+    <Button
+        android:id="@+id/buttonTambahMahasiswa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextAngkatan"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#45ffffff"
+        android:fontFamily="@font/montserratmedium"
+        android:text="Tambah Mahasiswa"/>
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imgbg"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextNamaUpdateMataKuliah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Mata Kuliah"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="#35ffffff"
+        android:padding="8dp"
+        android:fontFamily="@font/montserratlight"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextSKSUpdateMataKuliah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="SKS"
+        android:inputType="number"
+        android:layout_below="@id/editTextNamaUpdateMataKuliah"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="#35ffffff"
+        android:fontFamily="@font/montserratlight"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextDeskripsiUpdateMataKuliah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Deskripsi Mata Kuliah"
+        android:layout_below="@id/editTextSKSUpdateMataKuliah"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserratlight"
+        android:textColorHint="@color/white"
+        android:background="#35ffffff"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/buttonUpdateMataKuliah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:textColor="@color/black"
+        android:backgroundTint="#45ffffff"
+        android:fontFamily="@font/montserratmedium"
+        android:layout_below="@id/editTextDeskripsiUpdateMataKuliah"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonHapusMataKuliah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hapus"
+        android:layout_below="@id/buttonUpdateMataKuliah"
+        android:textColor="@color/black"
+        android:backgroundTint="#45ffffff"
+        android:fontFamily="@font/montserratmedium"
+        android:layout_marginTop="8dp"/>
+
+</RelativeLayout>

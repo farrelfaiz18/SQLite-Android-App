@@ -1,0 +1,110 @@
+<!-- activity_main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/imgbg"
+    android:padding="16dp"
+    android:gravity="center_vertical"
+    tools:context=".MainActivity">
+
+    <!-- Grup Tombol Tambah -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:id="@+id/buttonTambahMahasiswa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#35ffffff"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserratmedium"
+            android:text="Tambah Data Mahasiswa"/>
+
+        <Button
+            android:id="@+id/buttonTambahDosen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#35ffffff"
+            android:fontFamily="@font/montserratmedium"
+            android:textColor="@color/white"
+            android:text="Tambah Data Dosen"/>
+
+        <Button
+            android:id="@+id/buttonTambahMataKuliah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#35ffffff"
+            android:fontFamily="@font/montserratmedium"
+            android:textColor="@color/white"
+            android:text="Tambah Data Mata Kuliah"/>
+
+        <Button
+            android:id="@+id/buttonTambahNilai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#35ffffff"
+            android:fontFamily="@font/montserratmedium"
+            android:textColor="@color/white"
+            android:text="Tambah Data Nilai"/>
+    </LinearLayout>
+
+    <!-- Space untuk memberikan jarak -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp"/>
+
+    <!-- Grup Tombol Tampil -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:id="@+id/buttonListMahasiswa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#35ffffff"
+            android:fontFamily="@font/montserratmedium"
+            android:textColor="@color/white"
+            android:text="List Data Mahasiswa" />
+
+        <Button
+            android:id="@+id/buttonListDosen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#35ffffff"
+            android:fontFamily="@font/montserratmedium"
+            android:textColor="@color/white"
+            android:text="List Data Dosen" />
+
+        <Button
+            android:id="@+id/buttonListMataKuliah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/montserratmedium"
+            android:backgroundTint="#35ffffff"
+            android:textColor="@color/white"
+            android:text="List Data Mata Kuliah" />
+
+        <Button
+            android:id="@+id/buttonListNilai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#35ffffff"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserratmedium"
+            android:text="List Data Nilai" />
+    </LinearLayout>
+</LinearLayout>
